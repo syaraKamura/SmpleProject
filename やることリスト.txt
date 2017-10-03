@@ -1,0 +1,29 @@
+
+やることリスト
+
+
+
+GameMain
+
+プレイヤーと町のあたり判定
+プレイヤーと敵とのあたり判定
+
+NPCの作成
+
+マップオブジェクトの作成
+
+
+MyLibのについて
+
+
+文字列描画について
+
+文字サイズ、alphaの指定をできるようにする
+
+String_DrawString(int posX,int posY,int alaph,const char* str,unsigned int color);
+
+String_DrawString(int posX,int PosY,int fontSize,int alpha,unsigned int color,const char* str);
+
+
+
+

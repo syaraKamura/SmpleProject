@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Code">
+      <UniqueIdentifier>{05aca294-7029-4b07-b411-a07f7125db4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib">
+      <UniqueIdentifier>{6a2ecddc-508d-4f5b-9028-e8e1f3b71f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene">
+      <UniqueIdentifier>{e393d95a-6732-4a05-862e-d61a24303220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene\GameMain">
+      <UniqueIdentifier>{b37f83e6-3e6f-47f5-b55f-9de6d45a672f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Test">
+      <UniqueIdentifier>{ca891ffb-99d6-493f-9ae3-44958cb72e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene\GameMain\Camera">
+      <UniqueIdentifier>{f1b9bc02-63c8-437a-bb3e-0e03c68fb023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene\Title">
+      <UniqueIdentifier>{96e98de5-2715-4240-978e-d4552079dead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Test\TestMenu">
+      <UniqueIdentifier>{3dbe7444-6e54-40fa-8598-a1e79225756d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Common">
+      <UniqueIdentifier>{a9964068-2d51-4ca0-a5db-0861b272f01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene\GameMain\Charactor">
+      <UniqueIdentifier>{2a8a84e4-ad18-4681-8e19-5784dfa0db9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene\GameMain\Charactor\CharComRer">
+      <UniqueIdentifier>{66ab63ec-5142-4604-b37b-123709606dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene\GameMain\Map">
+      <UniqueIdentifier>{c23b91b6-d7e4-4139-bca9-c10dae3dc097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Scene\Boot">
+      <UniqueIdentifier>{d99d4b32-1aee-455a-9a55-1389a73762f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Test\TestGame">
+      <UniqueIdentifier>{9ef01922-1b4d-4f32-ab7c-64e15292b7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Test\TestGame\Tetoris">
+      <UniqueIdentifier>{c9148020-be87-4a82-ad36-e05493180653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Debug">
+      <UniqueIdentifier>{8be110c9-3cc9-4ad4-bb3c-d9ae44aa7855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Memory">
+      <UniqueIdentifier>{52dfaa52-6185-45f2-86be-7cb0ca0c1e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Task">
+      <UniqueIdentifier>{322aca0d-8901-45fb-b911-7eb8334cad2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Graphics">
+      <UniqueIdentifier>{5de4c253-2cee-4842-9ce0-60a82ac16615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Keyboard">
+      <UniqueIdentifier>{28381836-22c5-4f0a-bc4f-6ee4a934817b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\File">
+      <UniqueIdentifier>{2c7b5a7a-2de1-4b8d-baf1-22186e0d3a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Communication">
+      <UniqueIdentifier>{ef587095-2aa0-4f42-92ca-1b5d3c410973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Test\TestCommunication">
+      <UniqueIdentifier>{767d708d-74e9-46a7-b901-745a6eb0a5aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\KeyInputString">
+      <UniqueIdentifier>{6fbefd5e-daf5-4a6c-a6a8-ca64fb612e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Sound">
+      <UniqueIdentifier>{eaf59033-b1b4-493f-9e45-f0f1ec2bd42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Common\CommonRes">
+      <UniqueIdentifier>{ea40fb4c-26bd-4477-9eb2-e9c94db9d9f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Common\GameCommon">
+      <UniqueIdentifier>{fbb5da77-7810-4b0c-a6de-f8acfca2d5c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Common\Script">
+      <UniqueIdentifier>{69167575-99be-4cd2-8e23-743d4c20b164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\List">
+      <UniqueIdentifier>{9b9c6b0a-d12d-4106-90aa-673e77bf7341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Common\Global">
+      <UniqueIdentifier>{ad221fd9-4507-4cd9-9c9f-1fec8f9f4aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Easing">
+      <UniqueIdentifier>{f4496c37-087d-4af6-b51e-0149c760e572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Hit">
+      <UniqueIdentifier>{f3c7657c-4cfa-40c4-aab7-11c82419c32b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Model">
+      <UniqueIdentifier>{4d8b2032-d612-4267-83fe-6fd0c0f5e5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Figure">
+      <UniqueIdentifier>{b1fa3cdf-b69b-458e-9486-7445c4efccfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\FontMgr">
+      <UniqueIdentifier>{139a06ce-f645-4a20-8bcd-b04cddcaaaf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\GraphcisAnimationPlayer">
+      <UniqueIdentifier>{df3c8802-def3-4203-b427-4ec8df205e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\Test\TestGame\PackMan">
+      <UniqueIdentifier>{69ed4b69-f73f-4e3b-94a0-40f80800b812}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\GameMain.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\PlayerObj.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\PlayerMgr.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\Test.cpp">
+      <Filter>ソース ファイル\Code\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\MapObj.cpp">
+      <Filter>ソース ファイル\Code\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\Charactor\CharactorObj.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\Charactor\CharctorRes\CharComRes.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor\CharComRer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\Scene.cpp">
+      <Filter>ソース ファイル\Code\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\Title\Title.cpp">
+      <Filter>ソース ファイル\Code\Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestMenu\TestMenu.cpp">
+      <Filter>ソース ファイル\Code\Test\TestMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\Charactor\Chara_PlayerObj.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\Camera\CameraObj.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\Charactor\Chara_EnemyObj.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\GameMain\Charactor\EnemyMgr.cpp">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Scene\Boot\Boot.cpp">
+      <Filter>ソース ファイル\Code\Scene\Boot</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\Tetoris\TestTetoris.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame\Tetoris</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\Tetoris\TestAnim.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame\Tetoris</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\Tetoris\TestShotObj.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame\Tetoris</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestCommunication\TestCommunication.cpp">
+      <Filter>ソース ファイル\Code\Test\TestCommunication</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Common\CommonRes\CommonRes.cpp">
+      <Filter>ソース ファイル\Code\Common\CommonRes</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Common\GameCommon\GameCommon.cpp">
+      <Filter>ソース ファイル\Code\Common\GameCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Common\Script\Script.cpp">
+      <Filter>ソース ファイル\Code\Common\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Common\Script\ScriptFlag.cpp">
+      <Filter>ソース ファイル\Code\Common\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Common\Script\ScriptVariable.cpp">
+      <Filter>ソース ファイル\Code\Common\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Common\Global\GameData.cpp">
+      <Filter>ソース ファイル\Code\Common\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManGameMgr.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\TestGameMgr.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManStageMgr.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManChactorBase.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManCharctorMgr.cpp">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Scene\GameMain\GameMain.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\PlayerObj.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\PlayerMgr.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\Test.h">
+      <Filter>ソース ファイル\Code\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\MapObj.h">
+      <Filter>ソース ファイル\Code\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\Charactor\CharactorObj.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\Charactor\CharctorRes\CharComRes.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor\CharComRer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\Scene.h">
+      <Filter>ソース ファイル\Code\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\Title\Title.h">
+      <Filter>ソース ファイル\Code\Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestMenu\TestMenu.h">
+      <Filter>ソース ファイル\Code\Test\TestMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\Charactor\Chara_PlayerObj.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\Camera\CameraObj.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\Charactor\Chara_EnemyObj.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\GameMain\Charactor\EnemyMgr.h">
+      <Filter>ソース ファイル\Code\Scene\GameMain\Charactor</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Scene\Boot\Boot.h">
+      <Filter>ソース ファイル\Code\Scene\Boot</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\Tetoris\TestTetoris.h">
+      <Filter>ソース ファイル\Code\Test\TestGame\Tetoris</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\Tetoris\TestAnim.h">
+      <Filter>ソース ファイル\Code\Test\TestGame\Tetoris</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\Tetoris\TestShotObj.h">
+      <Filter>ソース ファイル\Code\Test\TestGame\Tetoris</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestCommunication\TestCommunication.h">
+      <Filter>ソース ファイル\Code\Test\TestCommunication</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Common\CommonRes\CommonRes.h">
+      <Filter>ソース ファイル\Code\Common\CommonRes</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Common\GameCommon\GameCommon.h">
+      <Filter>ソース ファイル\Code\Common\GameCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Common\Script\Script.h">
+      <Filter>ソース ファイル\Code\Common\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Common\Script\ScriptFlag.h">
+      <Filter>ソース ファイル\Code\Common\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Common\Script\ScriptVariable.h">
+      <Filter>ソース ファイル\Code\Common\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Common\Global\GameData.h">
+      <Filter>ソース ファイル\Code\Common\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManGameMgr.h">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\TestGameMgr.h">
+      <Filter>ソース ファイル\Code\Test\TestGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManStageMgr.h">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManChactorBase.h">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManCharctorMgr.h">
+      <Filter>ソース ファイル\Code\Test\TestGame\PackMan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Code\ReadMe.txt">
+      <Filter>ソース ファイル\Code</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

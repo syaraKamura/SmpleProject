@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Code">
+      <UniqueIdentifier>{027951c5-9aaa-403f-bf30-4b11456f3f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib">
+      <UniqueIdentifier>{a30500db-79a8-453b-8df1-786f39015f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Communication">
+      <UniqueIdentifier>{2f636823-d334-4740-ac6d-9bee6fb08fd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Debug">
+      <UniqueIdentifier>{88a9811d-c61e-4b0d-b678-f9740019cb80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Easing">
+      <UniqueIdentifier>{b796df0a-d25f-4700-8cd1-759782ae9ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Figure">
+      <UniqueIdentifier>{60c64777-9151-4576-a9ee-ba6a18089dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\File">
+      <UniqueIdentifier>{cd7cd6db-d142-401a-8303-861fa866e819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\FontMgr">
+      <UniqueIdentifier>{8f06522a-269e-47f0-ae01-ee5529213e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\GraphcisAnimationPlayer">
+      <UniqueIdentifier>{420c30e5-eccb-46b8-b0ca-5c92a5ca8888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Graphics">
+      <UniqueIdentifier>{ade2ab3b-9f01-4014-99a0-d296413c45e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Hit">
+      <UniqueIdentifier>{c12e3a87-68ae-4ea8-9f83-8c268a27c4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Keyboard">
+      <UniqueIdentifier>{ede7a821-c578-4ef4-9c85-e6f7c96a5571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\KeyInputString">
+      <UniqueIdentifier>{22d8d5db-f824-4b29-a8b1-673d4c7718e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Memory">
+      <UniqueIdentifier>{b8ab0e53-c996-4912-b696-6da0faab3296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Model">
+      <UniqueIdentifier>{88c38829-abce-42a4-b86d-0671931424f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Sound">
+      <UniqueIdentifier>{4d691841-912c-4b52-a65e-337f701a1018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Task">
+      <UniqueIdentifier>{7a3bc7c9-dae8-448e-81f0-ff4ec22d88af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Touch">
+      <UniqueIdentifier>{2099a7ae-e7fa-416f-b133-2dc54cc56838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Array2D">
+      <UniqueIdentifier>{e02c0e4c-f85b-4984-a0bf-dedd1d18b11d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Assert">
+      <UniqueIdentifier>{5e7339d3-3924-4026-9d1b-f37e8f4fbbfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\Framework">
+      <UniqueIdentifier>{bbb70d9b-410e-4e38-a152-55f5b840e534}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\MyLib\Communication\Communication.h">
+      <Filter>ソース ファイル\Code\MyLib\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Debug\Debug.h">
+      <Filter>ソース ファイル\Code\MyLib\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Easing\Easing.h">
+      <Filter>ソース ファイル\Code\MyLib\Easing</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Figure\Figure.h">
+      <Filter>ソース ファイル\Code\MyLib\Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\File\File.h">
+      <Filter>ソース ファイル\Code\MyLib\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\FontMgr\FontMgr.h">
+      <Filter>ソース ファイル\Code\MyLib\FontMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\GraphcisAnimationPlayer\GraphcisAnimationPlayer.h">
+      <Filter>ソース ファイル\Code\MyLib\GraphcisAnimationPlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Graphics\Graphics.h">
+      <Filter>ソース ファイル\Code\MyLib\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Hit\Hit.h">
+      <Filter>ソース ファイル\Code\MyLib\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Keyboard\Keyboard.h">
+      <Filter>ソース ファイル\Code\MyLib\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\KeyInputString\KeyInputString.h">
+      <Filter>ソース ファイル\Code\MyLib\KeyInputString</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Memory\Memory.h">
+      <Filter>ソース ファイル\Code\MyLib\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Model\Model.h">
+      <Filter>ソース ファイル\Code\MyLib\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Sound\Sound.h">
+      <Filter>ソース ファイル\Code\MyLib\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Task\Task.h">
+      <Filter>ソース ファイル\Code\MyLib\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Touch\Touch.h">
+      <Filter>ソース ファイル\Code\MyLib\Touch</Filter>
+    </ClInclude>
+    <ClInclude Include="TDXLib.h">
+      <Filter>ソース ファイル\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Array2D\Array2D.h">
+      <Filter>ソース ファイル\Code\MyLib\Array2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Assert\Assert.h">
+      <Filter>ソース ファイル\Code\MyLib\Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\MyLib\Framework\Framework.h">
+      <Filter>ソース ファイル\Code\MyLib\Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\MyLib\Communication\Communication.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Debug\Debug.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Easing\Easing.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Easing</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Figure\Figure.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Figure</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\File\File.cpp">
+      <Filter>ソース ファイル\Code\MyLib\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\FontMgr\FontMgr.cpp">
+      <Filter>ソース ファイル\Code\MyLib\FontMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\GraphcisAnimationPlayer\GraphcisAnimationPlayer.cpp">
+      <Filter>ソース ファイル\Code\MyLib\GraphcisAnimationPlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Graphics\Graphics.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Hit\Hit.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Hit</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Keyboard\Keyboard.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\KeyInputString\KeyInputString.cpp">
+      <Filter>ソース ファイル\Code\MyLib\KeyInputString</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Memory\Memory.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Model\Model.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Sound\Sound.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Task\Task.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Touch\Touch.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Touch</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Array2D\Array2D.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Array2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Assert\Assert.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Assert</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\Framework\Framework.cpp">
+      <Filter>ソース ファイル\Code\MyLib\Framework</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

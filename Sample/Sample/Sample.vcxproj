@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7DB76A0F-761C-4501-9C08-0B115C659B62}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Sample</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__MY_DEBUG__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.././TDXLin;Code;./DxLib;.././TDXLin/Code;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./DxLib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./Code;./DxLib;.././TDXLin;.././TDXLin/Code;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>./DxLib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\Common\CommonRes\CommonRes.cpp" />
+    <ClCompile Include="Code\Common\GameCommon\GameCommon.cpp" />
+    <ClCompile Include="Code\Common\Global\GameData.cpp" />
+    <ClCompile Include="Code\Common\Script\Script.cpp" />
+    <ClCompile Include="Code\Common\Script\ScriptFlag.cpp" />
+    <ClCompile Include="Code\Common\Script\ScriptVariable.cpp" />
+    <ClCompile Include="Code\Scene\Boot\Boot.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\Camera\CameraObj.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\Charactor\CharactorObj.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\Charactor\Chara_EnemyObj.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\Charactor\Chara_PlayerObj.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\Charactor\CharctorRes\CharComRes.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\Charactor\EnemyMgr.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\GameMain.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\PlayerMgr.cpp" />
+    <ClCompile Include="Code\Scene\GameMain\PlayerObj.cpp" />
+    <ClCompile Include="Code\Scene\Scene.cpp" />
+    <ClCompile Include="Code\Scene\Title\Title.cpp" />
+    <ClCompile Include="Code\Test\MapObj.cpp" />
+    <ClCompile Include="Code\Test\Test.cpp" />
+    <ClCompile Include="Code\Test\TestCommunication\TestCommunication.cpp" />
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManChactorBase.cpp" />
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManCharctorMgr.cpp" />
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManGameMgr.cpp" />
+    <ClCompile Include="Code\Test\TestGame\PackMan\PackManStageMgr.cpp" />
+    <ClCompile Include="Code\Test\TestGame\TestGameMgr.cpp" />
+    <ClCompile Include="Code\Test\TestGame\Tetoris\TestAnim.cpp" />
+    <ClCompile Include="Code\Test\TestGame\Tetoris\TestShotObj.cpp" />
+    <ClCompile Include="Code\Test\TestGame\Tetoris\TestTetoris.cpp" />
+    <ClCompile Include="Code\Test\TestMenu\TestMenu.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Common\CommonRes\CommonRes.h" />
+    <ClInclude Include="Code\Common\GameCommon\GameCommon.h" />
+    <ClInclude Include="Code\Common\Global\GameData.h" />
+    <ClInclude Include="Code\Common\Script\Script.h" />
+    <ClInclude Include="Code\Common\Script\ScriptFlag.h" />
+    <ClInclude Include="Code\Common\Script\ScriptVariable.h" />
+    <ClInclude Include="Code\Scene\Boot\Boot.h" />
+    <ClInclude Include="Code\Scene\GameMain\Camera\CameraObj.h" />
+    <ClInclude Include="Code\Scene\GameMain\Charactor\CharactorObj.h" />
+    <ClInclude Include="Code\Scene\GameMain\Charactor\Chara_EnemyObj.h" />
+    <ClInclude Include="Code\Scene\GameMain\Charactor\Chara_PlayerObj.h" />
+    <ClInclude Include="Code\Scene\GameMain\Charactor\CharctorRes\CharComRes.h" />
+    <ClInclude Include="Code\Scene\GameMain\Charactor\EnemyMgr.h" />
+    <ClInclude Include="Code\Scene\GameMain\GameMain.h" />
+    <ClInclude Include="Code\Scene\GameMain\PlayerMgr.h" />
+    <ClInclude Include="Code\Scene\GameMain\PlayerObj.h" />
+    <ClInclude Include="Code\Scene\Scene.h" />
+    <ClInclude Include="Code\Scene\Title\Title.h" />
+    <ClInclude Include="Code\Test\MapObj.h" />
+    <ClInclude Include="Code\Test\Test.h" />
+    <ClInclude Include="Code\Test\TestCommunication\TestCommunication.h" />
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManChactorBase.h" />
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManCharctorMgr.h" />
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManGameMgr.h" />
+    <ClInclude Include="Code\Test\TestGame\PackMan\PackManStageMgr.h" />
+    <ClInclude Include="Code\Test\TestGame\TestGameMgr.h" />
+    <ClInclude Include="Code\Test\TestGame\Tetoris\TestAnim.h" />
+    <ClInclude Include="Code\Test\TestGame\Tetoris\TestShotObj.h" />
+    <ClInclude Include="Code\Test\TestGame\Tetoris\TestTetoris.h" />
+    <ClInclude Include="Code\Test\TestMenu\TestMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Code\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TDXLin\TDXLin.vcxproj">
+      <Project>{ec70f578-68e9-41f2-82ea-3b3e3abf97e8}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

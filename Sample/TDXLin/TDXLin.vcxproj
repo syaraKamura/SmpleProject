@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC70F578-68E9-41F2-82EA-3B3E3ABF97E8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TDXLin</RootNamespace>
+    <ProjectName>TDXLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__MY_DEBUG__;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>././DxLib;././Code</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./DxLib;./Code;</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\MyLib\Array2D\Array2D.h" />
+    <ClInclude Include="Code\MyLib\Assert\Assert.h" />
+    <ClInclude Include="Code\MyLib\Communication\Communication.h" />
+    <ClInclude Include="Code\MyLib\Debug\Debug.h" />
+    <ClInclude Include="Code\MyLib\Easing\Easing.h" />
+    <ClInclude Include="Code\MyLib\Figure\Figure.h" />
+    <ClInclude Include="Code\MyLib\File\File.h" />
+    <ClInclude Include="Code\MyLib\FontMgr\FontMgr.h" />
+    <ClInclude Include="Code\MyLib\Framework\Framework.h" />
+    <ClInclude Include="Code\MyLib\GraphcisAnimationPlayer\GraphcisAnimationPlayer.h" />
+    <ClInclude Include="Code\MyLib\Graphics\Graphics.h" />
+    <ClInclude Include="Code\MyLib\Hit\Hit.h" />
+    <ClInclude Include="Code\MyLib\Keyboard\Keyboard.h" />
+    <ClInclude Include="Code\MyLib\KeyInputString\KeyInputString.h" />
+    <ClInclude Include="Code\MyLib\Memory\Memory.h" />
+    <ClInclude Include="Code\MyLib\Model\Model.h" />
+    <ClInclude Include="Code\MyLib\Sound\Sound.h" />
+    <ClInclude Include="Code\MyLib\Task\Task.h" />
+    <ClInclude Include="Code\MyLib\Touch\Touch.h" />
+    <ClInclude Include="TDXLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\MyLib\Array2D\Array2D.cpp" />
+    <ClCompile Include="Code\MyLib\Assert\Assert.cpp" />
+    <ClCompile Include="Code\MyLib\Communication\Communication.cpp" />
+    <ClCompile Include="Code\MyLib\Debug\Debug.cpp" />
+    <ClCompile Include="Code\MyLib\Easing\Easing.cpp" />
+    <ClCompile Include="Code\MyLib\Figure\Figure.cpp" />
+    <ClCompile Include="Code\MyLib\File\File.cpp" />
+    <ClCompile Include="Code\MyLib\FontMgr\FontMgr.cpp" />
+    <ClCompile Include="Code\MyLib\Framework\Framework.cpp" />
+    <ClCompile Include="Code\MyLib\GraphcisAnimationPlayer\GraphcisAnimationPlayer.cpp" />
+    <ClCompile Include="Code\MyLib\Graphics\Graphics.cpp" />
+    <ClCompile Include="Code\MyLib\Hit\Hit.cpp" />
+    <ClCompile Include="Code\MyLib\Keyboard\Keyboard.cpp" />
+    <ClCompile Include="Code\MyLib\KeyInputString\KeyInputString.cpp" />
+    <ClCompile Include="Code\MyLib\Memory\Memory.cpp" />
+    <ClCompile Include="Code\MyLib\Model\Model.cpp" />
+    <ClCompile Include="Code\MyLib\Sound\Sound.cpp" />
+    <ClCompile Include="Code\MyLib\Task\Task.cpp" />
+    <ClCompile Include="Code\MyLib\Touch\Touch.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
