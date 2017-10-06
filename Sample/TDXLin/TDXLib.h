@@ -35,6 +35,8 @@
 
 #include "Code/MyLib/Array2D/Array2D.h"
 
+#include "Code/MyLib/Framework/Framework.h"
+
 
 
 //•Ï”Œ^éŒ¾

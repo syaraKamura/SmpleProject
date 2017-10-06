@@ -9,6 +9,13 @@ static void _Finalize();
 static void _Updata();
 static void _Draw();
 
+static FRAMEWORK_DATA s_Framework = {
+	_Initialize,
+	_Finalize,
+	_Updata,
+	_Draw,
+};
+
 
 int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	
@@ -34,10 +41,12 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 	// Ｚバッファへの書き込みを有効にする
 	SetWriteZBuffer3D( TRUE ) ;
 
-	_Initialize();
+	//_Initialize();
+
+	Framework_Init(s_Framework);
 
     // while( 裏画面を表画面に反映, メッセージ処理, 画面クリア, )
-	while( ScreenFlip()==0 && ProcessMessage()==0 && ClearDrawScreen()==0 && Keyboard_Off(KEY_INPUT_ESCAPE)){
+	while( ProcessMessage()==0 && Keyboard_Off(KEY_INPUT_ESCAPE)){
 		
 		clsDx();
 
@@ -45,13 +54,19 @@ int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int){
 		Keyboard_Updata();	
 		Touch_Updata();
 
-		_Updata();
-		_Draw();
+		//_Updata();
+		//_Draw();
+
+		Framework_UpdataBgin();
+		Framework_Draw();
+		Framework_UpdataEnd();
 
 	}
 
-	_Finalize();
+	//_Finalize();
 	
+	Framework_Finalize();
+
     DxLib_End(); // DXライブラリ終了処理
     return 0;
 }

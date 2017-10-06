@@ -1,31 +1,9 @@
-﻿2017/10/02 3:18:02 にビルドを開始しました。
+﻿2017/10/06 22:50:08 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "D:\デスクトップ\Project\Sample\Sample\TDXLin\TDXLin.vcxproj" (Build ターゲット)。
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I././DxLib /I././Code /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D __MY_DEBUG__ /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Code\MyLib\Framework\Framework.cpp
-         Framework.cpp
-       Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"D:\デスクトップ\Project\Sample\Sample\Debug\TDXLib.lib" /NOLOGO Debug\Array2D.obj
-         Debug\Assert.obj
-         Debug\Communication.obj
-         Debug\Debug.obj
-         Debug\Easing.obj
-         Debug\Figure.obj
-         Debug\File.obj
-         Debug\FontMgr.obj
-         Debug\Framework.obj
-         Debug\GraphcisAnimationPlayer.obj
-         Debug\Graphics.obj
-         Debug\Hit.obj
-         Debug\Keyboard.obj
-         Debug\KeyInputString.obj
-         Debug\Memory.obj
-         Debug\Model.obj
-         Debug\Sound.obj
-         Debug\Task.obj
-         Debug\Touch.obj
+     1>Lib:
          TDXLin.vcxproj -> D:\デスクトップ\Project\Sample\Sample\Debug\TDXLib.lib
      1>プロジェクト "D:\デスクトップ\Project\Sample\Sample\TDXLin\TDXLin.vcxproj" (Build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:01.21
+経過時間 00:00:00.09
