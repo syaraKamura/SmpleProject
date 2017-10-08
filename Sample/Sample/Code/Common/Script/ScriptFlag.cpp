@@ -13,6 +13,8 @@
 
 //	------- インクルード宣言
 #include "Common/GameCommon/GameCommon.h"
+#include "Common/Global/GameData.h"
+
 #include "ScriptFlag.h"
 
 //	------- 固定定数宣言
@@ -47,9 +49,9 @@ static const u8 FLAG_OFF = 0;
 void ScriptFlag_Initialize(SCRIPT_FLAG_DATA* flag){
 	
 	//すべてのフラグを0にする
-	for(int i = 0;i < FLAG_DATA_NUM;i++){
-		flag->flag[i] = 0;
-	}
+	//for(int i = 0;i < FLAG_DATA_NUM;i++){
+	//	flag->flag[i] = 0;
+	//}
 }
 
 /*
@@ -100,7 +102,10 @@ void ScriptFlag_FlagOn(SCRIPT_FLAG_DATA* flag,s32 index){
 	//範囲外なら処理を抜ける
 	if(index < 0 || index >= FLAG_DATA_NUM) return ;
 	
-	flag->flag[index] = FLAG_ON;
+	//flag->flag[index] = FLAG_ON;
+
+	GameData_SetGameDataFlag(index,TRUE);
+
 }
 
 /*
@@ -112,7 +117,8 @@ void ScriptFlag_FlagOff(SCRIPT_FLAG_DATA* flag,s32 index){
 	//範囲外なら処理を抜ける
 	if(index < 0 || index >= FLAG_DATA_NUM) return ;
 	
-	flag->flag[index] = FLAG_OFF;
+	//flag->flag[index] = FLAG_OFF;
+	GameData_SetGameDataFlag(index,FALSE);
 }
 
 /*
@@ -125,5 +131,7 @@ void ScriptFlag_FlagOff(SCRIPT_FLAG_DATA* flag,s32 index){
 u8 ScriptFlag_GetFlag(SCRIPT_FLAG_DATA* flag,s32 index){
 	//範囲外なら処理を抜ける
 	if(index < 0 || index >= FLAG_DATA_NUM) return FLAG_OFF;
-	return flag->flag[index];
+	u8 _flag = GameData_IsFlag(index) ? FLAG_ON : FLAG_OFF;
+	return _flag;
+	//return flag->flag[index];
 }

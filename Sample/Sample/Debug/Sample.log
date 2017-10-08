@@ -1,10 +1,7 @@
-﻿2017/10/06 22:46:22 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "D:\デスクトップ\Project\Sample\Sample\Sample\Sample.vcxproj" (Build ターゲット)。
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I.././TDXLin /ICode /I./DxLib /I.././TDXLin/Code /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D __MY_DEBUG__ /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
-         main.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\デスクトップ\Project\Sample\Sample\Debug\Sample.exe" /INCREMENTAL /NOLOGO /LIBPATH:./DxLib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\デスクトップ\Project\Sample\Sample\Debug\Sample.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\デスクトップ\Project\Sample\Sample\Debug\Sample.lib" /MACHINE:X86 Debug\CommonRes.obj
+﻿2017/10/08 10:24:47 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "F:\visual studio C\project\mySample\Sample\Sample\Sample.vcxproj" (Build ターゲット)。
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\visual studio C\project\mySample\Sample\Debug\Sample.exe" /INCREMENTAL /NOLOGO /LIBPATH:./DxLib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\visual studio C\project\mySample\Sample\Debug\Sample.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\visual studio C\project\mySample\Sample\Debug\Sample.lib" /MACHINE:X86 Debug\CommonRes.obj
          Debug\GameCommon.obj
          Debug\GameData.obj
          Debug\Script.obj
@@ -35,10 +32,10 @@
          Debug\TestTetoris.obj
          Debug\TestMenu.obj
          Debug\main.obj
-         "D:\デスクトップ\Project\Sample\Sample\Debug\TDXLib.lib"
-         Sample.vcxproj -> D:\デスクトップ\Project\Sample\Sample\Debug\Sample.exe
-     1>プロジェクト "D:\デスクトップ\Project\Sample\Sample\Sample\Sample.vcxproj" (Build ターゲット) のビルドが完了しました。
+         "F:\visual studio C\project\mySample\Sample\Debug\TDXLib.lib"
+         Sample.vcxproj -> F:\visual studio C\project\mySample\Sample\Debug\Sample.exe
+     1>プロジェクト "F:\visual studio C\project\mySample\Sample\Sample\Sample.vcxproj" (Build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:01.83
+経過時間 00:00:02.33
