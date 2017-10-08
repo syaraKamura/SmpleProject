@@ -175,7 +175,7 @@ void Framework_Finalize(){
 		s_Framework.FinalzieFunc();
 	}
 
-}
+} 
 
 /*
 	更新処理開始
@@ -206,7 +206,9 @@ void Framework_Draw(){
 		s_Framework.DrawFunc();
 	}
 
-	DrawFormatString(0,0,GetColor(255,255,255),"%0.1f",s_fps.GetFps());
+	int posX = WINDOW_WIDTH - 80;
+	int posY = WINDOW_HEIGHT - 20;
+	DrawFormatString(posX,posY,GetColor(255,255,255),"FPS:%0.1f",s_fps.GetFps());
 
 }
 

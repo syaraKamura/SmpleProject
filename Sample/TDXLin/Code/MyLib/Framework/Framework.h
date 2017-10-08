@@ -20,6 +20,10 @@
 
 //	-------	マクロ定義
 
+#define WINDOW_WIDTH 640
+#define WINDOW_HEIGHT 480
+
+
 //	------- 列挙体
 
 //	------- 構造体&共用体

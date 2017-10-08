@@ -39,12 +39,6 @@
 #endif	//__WINDOWS__
 
 
-
-
-#define WINDOW_WIDTH 640
-#define WINDOW_HEIGHT 480
-
-
 //	----- ‚æ‚­g‚¤F‚Ì’è”
 #define COLOR_WHITE GetColor(255,255,255)	//”’
 #define COLOR_BLACK GetColor(0,0,0)			//•
