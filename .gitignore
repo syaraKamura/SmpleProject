@@ -53,3 +53,5 @@ dkms.conf
 *.tlog
 *.suo
 *.log
+*.sdf
+*.suo
