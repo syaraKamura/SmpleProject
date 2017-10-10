@@ -69,11 +69,6 @@ typedef struct{
 	int blockKind;
 	eStep step;
 	int waitCnt;
-	int mdelHdl;
-	int animHdl;
-	int attactIdx;
-	f32 toalTime;
-	f32 playTime;
 }WORK_OBJ;
 
 static WORK_OBJ* s_pWork;
@@ -137,18 +132,6 @@ const BLOCK_DATA_TBL s_BlockTbl[] = {
 	},
 };
 
-static void _AnimProc(WORK_OBJ* ix){
-
-	if(ix->playTime >= ix->toalTime){
-		return ;
-	}
-
-	ix->playTime +=1.0f;
-
-	MV1SetAttachAnimTime(ix->mdelHdl,ix->attactIdx,ix->playTime);
-
-
-}
 
 static eStep _MainProc(WORK_OBJ* ix){
 
@@ -179,12 +162,6 @@ static eStep _MainProc(WORK_OBJ* ix){
 		TestShotObj_Create(GetRand(630),GetRand(450));
 	}
 
-	if(Keyboard_Press(KEY_INPUT_SPACE)){
-		ix->playTime = 0.0f;
-	}
-
-
-	_AnimProc(ix);
 
 	int posY = ix->posY;
 	int blockKind = ix->blockKind;
@@ -253,11 +230,12 @@ static void _Updata(WORK_OBJ* ix){
 					ix->pAnimObj[i] = NULL;
 				}
 			}
-			MV1DeleteModel(ix->mdelHdl);
-			MV1DeleteModel(ix->animHdl);
 		}
 		ix->waitCnt++;
 		if(ix->waitCnt > 2){
+
+			
+
 			ix->step = eStep_ExitDone;
 		}
 		break;
@@ -293,13 +271,6 @@ static void _Draw(WORK_OBJ* ix){
 	DrawString(300,70,"Qキー:回転アニメーション",GetColor(255,255,255));
 	DrawString(300,90,"Wキー:ランダム移動",GetColor(255,255,255));
 
-
-	MV1SetPosition( ix->mdelHdl, VGet( 320.0f, 0.0f, 600.0f ) ) ;
-	MV1DrawModel(ix->mdelHdl);
-	VECTOR pos = MV1GetPosition(ix->mdelHdl);
-	DrawFormatString(0,0,COLOR_RED,"%.1f %.1f %.1f",pos.x,pos.y,pos.z);
-	SetCameraPositionAndTarget_UpVecY(VGet(0,0,0),VAdd(pos,VGet(0,0,-1)));
-
 }
 
 static void _Del(WORK_OBJ* ix){
@@ -308,6 +279,8 @@ static void _Del(WORK_OBJ* ix){
 }
 
 void TestTetoris_Init(){
+
+	ASSERT_MES(s_pWork == NULL,"すでに生成しています",s_pWork);
 
 	WORK_OBJ* ix = Task_CreateBase(_Updata,_Draw,_Del,WORK_OBJ,eTaskClassType_Class00);
 
@@ -345,19 +318,6 @@ void TestTetoris_Init(){
 		ix->pAnimObj[2] = TestAnimObj_Create("Data/Graphic/Common/Player1.png",300,400,2.5,0.0,eAnimKind_RandomMove);
 		ix->pAnimObj[3] = TestAnimObj_Create("Data/Graphic/Common/Telop.png",0,0,1.0,0.0,eAnimKind_In);
 		
-		ix->mdelHdl = MV1LoadModel("Data/Model/Charactor/02/Modle.mv1");
-		ix->animHdl = MV1LoadModel("Data/Model/Charactor/02/AnimA.mv1");
-		ix->attactIdx = MV1AttachAnim(ix->mdelHdl,0,ix->animHdl);
-
-		
-
-		ix->toalTime = MV1GetAttachAnimTotalTime( ix->mdelHdl, ix->attactIdx ) ;
-		ix->playTime = 0;
-		MV1SetScale(ix->mdelHdl,VGet(15,15,15));
-		SetCameraNearFar(10,1000);
-		VECTOR pos = MV1GetPosition(ix->mdelHdl);
-		//SetCameraPositionAndTargetAndUpVec(VGet(0,0,0),VAdd(pos,VGet(0,0,-10)) ,VGet(0,0,-20));
-		SetCameraPositionAndTarget_UpVecY(VGet(0,0,0),VAdd(pos,VGet(0,1,-10)));
 		s_pWork = ix;
 	}
 

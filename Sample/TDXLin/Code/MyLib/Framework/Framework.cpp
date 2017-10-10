@@ -135,6 +135,13 @@ public :
 	}
 
 	/*
+		設定されているフレームレートの値を返却する
+	*/
+	int GetUserSetFps(){
+		return m_Fps;
+	}
+
+	/*
 		スキップするか返却する
 		return	true	:スキップする
 				false	:スキップしない
@@ -208,7 +215,17 @@ void Framework_Draw(){
 
 	int posX = WINDOW_WIDTH - 80;
 	int posY = WINDOW_HEIGHT - 20;
-	DrawFormatString(posX,posY,GetColor(255,255,255),"FPS:%0.1f",s_fps.GetFps());
+	float anderLineFps = s_fps.GetUserSetFps() * 0.8f;
+
+	unsigned int color = GetColor(255,255,255);
+
+	if(s_fps.GetFps() > anderLineFps && s_fps.GetFps() <= s_fps.GetUserSetFps() - 0.5f){
+		color = GetColor(255,255,0);
+	}else if(s_fps.GetFps() < anderLineFps){
+		color = GetColor(255,0,0);
+	}
+
+	DrawFormatString(posX,posY,color,"FPS:%0.1f",s_fps.GetFps());
 
 }
 
