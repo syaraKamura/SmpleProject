@@ -95,6 +95,7 @@
     <ClInclude Include="Code\MyLib\Hit\Hit.h" />
     <ClInclude Include="Code\MyLib\Keyboard\Keyboard.h" />
     <ClInclude Include="Code\MyLib\KeyInputString\KeyInputString.h" />
+    <ClInclude Include="Code\MyLib\List\List.h" />
     <ClInclude Include="Code\MyLib\Memory\Memory.h" />
     <ClInclude Include="Code\MyLib\Model\Model.h" />
     <ClInclude Include="Code\MyLib\Sound\Sound.h" />
@@ -117,6 +118,7 @@
     <ClCompile Include="Code\MyLib\Hit\Hit.cpp" />
     <ClCompile Include="Code\MyLib\Keyboard\Keyboard.cpp" />
     <ClCompile Include="Code\MyLib\KeyInputString\KeyInputString.cpp" />
+    <ClCompile Include="Code\MyLib\List\List.cpp" />
     <ClCompile Include="Code\MyLib\Memory\Memory.cpp" />
     <ClCompile Include="Code\MyLib\Model\Model.cpp" />
     <ClCompile Include="Code\MyLib\Sound\Sound.cpp" />

@@ -76,6 +76,9 @@
     <Filter Include="ソース ファイル\Code\MyLib\Framework">
       <UniqueIdentifier>{bbb70d9b-410e-4e38-a152-55f5b840e534}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Code\MyLib\List">
+      <UniqueIdentifier>{58dc2896-0f81-4a57-9191-6ab4fa27372d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -141,6 +144,9 @@
     <ClInclude Include="Code\MyLib\Framework\Framework.h">
       <Filter>ソース ファイル\Code\MyLib\Framework</Filter>
     </ClInclude>
+    <ClInclude Include="Code\MyLib\List\List.h">
+      <Filter>ソース ファイル\Code\MyLib\List</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code\MyLib\Communication\Communication.cpp">
@@ -199,6 +205,9 @@
     </ClCompile>
     <ClCompile Include="Code\MyLib\Framework\Framework.cpp">
       <Filter>ソース ファイル\Code\MyLib\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\MyLib\List\List.cpp">
+      <Filter>ソース ファイル\Code\MyLib\List</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
